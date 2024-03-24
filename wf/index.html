@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Assigment</title>
+    <style>
+        #navbar{
+            background-color:rgb(3, 32, 3);
+            margin-top: -15px;
+            margin-left: -7px;
+            margin-right: -7px;
+        }
+        #navbar ul{
+            overflow: hidden;
+        }
+        #navbar li{
+            float: left;
+            list-style: none;
+            margin: 15px 36px;
+            font-size: 20px;
+        }
+        #navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        #navbar li a:hover{
+            text-decoration: underline rgb(286, 189, -17) ;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 3px;
+        }
+        #navbar input{
+            border-radius: 40px;
+            padding: auto;
+            background-color: transparent;
+            border-color: aliceblue;
+            width: 75%;
+            height: 25px;
+            color: aliceblue;
+            position: relative;
+        }
+        ::placeholder{
+            padding: 20px;
+            color: aliceblue;
+        }
+        #icon{
+            width: 35px;
+            height: 35px;
+            border: 2px white;
+            background: white;
+            border-radius: 50px;
+            text-align: center;
+            float: right;
+            right: 20%;
+            position: relative;
+            margin-top: -2px;
+        }
+        i{
+            padding: 4px;
+            font-size: 20px;
+        }
+        body{
+            background: wheat;
+        }
+        .cart{
+            width: 35px;
+            height: 35px;
+            border: 2px solid white;
+            border-radius: 50px;
+            color: aliceblue;
+            background-color: transparent;
+            float: left;
+            margin-top: 9px;
+        }
+        #right i{
+            
+            font-size: 30px;
+            margin: -4px;
+        }
+        .main{
+            
+            width: 20%;
+            height: auto;
+            margin: 40px 0 0 90px;
+        }
+        #te{
+            color:  rgb(2, 52, 2);
+            font-style: italic;
+            font-size: 50px;
+            margin-top: -10px;
+        }
+        #xt{
+            margin-top: -50px;
+            margin-left: 60px;
+            font-style: italic;
+            font-size: 50px;
+            font-weight: bolder;
+            color:  rgb(2, 52, 2);
+        }
+        #st{
+            margin-top: -62px;
+            margin-left: 99px;
+            font-style: italic;
+            font-size: 50px;
+            font-weight: bolder;
+            color: rgb(286, 189, -17);
+        }
+        label{
+            font-size: 20px;
+            margin-left: 60px;
+            color: rgb(286, 189, -17);
+            font-style: italic;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #img1{
+            width: 200px;
+            height: 250px;
+            border: 9px solid white;
+            margin-left: 30%;
+            margin-top: -120px;
+            background: url(Capture.jpG);
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+            background-color: white;
+        }
+        #img2{
+            width: 200px;
+            height: 250px;
+            border: 9px solid white;
+            margin-left: 30%;
+            margin-top: 25px;
+            background: url(Capture2.JPG);
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+            background-color: white;
+        }
+        #img3{
+            width: 200px;
+            height: 250px;
+            border: 9px solid white;
+            margin-left: 46%;
+            margin-top: -560px;
+            background: url(Capture3.JPG);
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+            background-color: white;
+        }
+        #img4{
+            width: 200px;
+            height: 250px;
+            border: 9px solid white;
+            margin-left: 46%;
+            margin-top: 25px;
+            background: url(Capture4.JPG);
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+            background-color: white;
+        }
+        #img5{
+            width: 374px;
+            height: 552px;
+            
+            margin-left: 62%;
+            margin-top: -556px;
+            background: url(Capture5.JPG);
+            background-repeat: no-repeat;
+            background-size: 374px 300px;
+            background-color: white;
+            
+        }
+        #btn1{
+            margin-top: 147px;
+            margin-left: -46px;
+            background: rgb(286, 189, -17);
+            color: whitesmoke;
+            font-size: 19px;
+            border: 0;
+            font-weight: bolder;
+        }
+        #btn2{
+            margin-top: 150px;
+            margin-left: 160px; 
+            background: rgb(286, 189, -17);
+            color: whitesmoke;
+            font-size: 18px;
+            border: 0;
+            font-weight: bolder;
+        }
+        #btn3{
+            margin-top: 544px;
+            margin-left: 157px;
+            background: rgb(286, 189, -17);
+            color: white;
+            font-size: 16px;
+            font-weight: bolder;
+            border: 0;
+        }
+        #btn{
+            width: 151px;
+            height: 156px;
+            border: 1px solid rgb(286, 189, -17);
+            margin-top: -500px;
+            margin-left: 304px;
+            border-radius: 100%;
+            background: rgb(286, 189, -17);
+        }
+        #btn h1{
+           text-align: center;
+            
+            font-size: 60px;
+            color: white;
+            font-weight: bolder;
+        }
+        #side{
+            width: 179px;
+            height: auto;
+            
+            margin-top: -300px;
+            margin-left: 38px;
+        }
+        #side a{
+            text-underline-offset: 8px;
+            font-size: 25px;
+            color:  rgb(2, 52, 2);
+            font-family: sans-serif;
+        }
+        #side li{
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:  rgb(2, 52, 2);
+            font-style: italic;
+            font-weight: bold;
+        }
+        li::marker{
+            color: rgb(286, 189, -17);
+            font-size: 30px;
+
+        }
+        .bx-chevron-down-circle{
+            float: right;
+            font-size: 25px;
+            color:  rgb(2, 52, 2);
+        }
+        .A{
+            padding: 11px 0 0 6px;
+            font-weight: bold;
+            color:  rgb(2, 52, 2);
+        }
+        .pa{
+            margin: -19px 0px 0px 5px;
+            color:  rgb(2, 52, 2);
+        }
+        .B{
+            margin: 204px 0px 0px 6px;
+            color:  rgb(2, 52, 2);
+        }
+        .ps{
+            margin: 1px;
+            color:  rgb(2, 52, 2);
+        }
+        #main{
+            width: 372px;
+            height: 254px;
+            margin: 71px 0px 0px 0px;
+        }
+        #main h1{
+            color:  rgb(2, 52, 2); 
+        }
+        #m1{
+            margin-top: -12px;
+            color:  rgb(2, 52, 2);
+        }
+        .tag{
+            width: 105px;
+            height: 50px;
+            
+            position: absolute;
+        }
+        .tag p{
+            margin: 11px 0px 0px 22px;
+        }
+        .tag del{
+            color: rgb(286, 189, -17);
+            font-size: 30px;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        #dol{
+            color:  rgb(2, 52, 2);
+            font-size: 30px;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        #sid{
+            width: 172px;
+            height: 85px;
+            
+            margin-left: 197px;
+            position: relative;
+        }
+        #sid h3{
+            padding-left: 110px;
+            color: rgb(286, 189, -17);
+        }
+        .btu{
+            border-radius: 100%;
+            width: 26px;
+            height: 24px;
+            background:  rgb(2, 52, 2);
+            color: white;
+            margin-left: 7px;
+        }
+        #f{
+            width: 118px;
+            height: 64px;
+           
+            margin: -392px 0px 0px 81px;
+            font-size: 24px;
+            color:  rgb(2, 52, 2);
+        }
+        .bx-slider-alt{
+            font-size: 24px;
+            color:  rgb(2, 52, 2);
+        }
+    </style>
+</head>     
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">Gender</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contant</a></li>
+                <li id="cotain"><input type="text" placeholder="search"><button id="icon"><i class='bx bx-search'></i></button></li>
+                <li><a href="#">Cart</li>
+                <button class="cart">3</button>
+                <li id="right"><a href="#"><i class='bx bx-list-ul' ></i></a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="main"><label for="#">The</label>
+        <h1 id="te">Second</h1>
+        <h1 id="xt">Hand</h1>
+        <h1 id="st">Store</h1>
+    </div>
+    
+    <div id="img1"><button id="btn1">Newest</button>
+    <h4 class="A">Your text here</h4><p class="pa">Lorem ipsum dolor...</p></div>
+    <div id="img2"><h4 class="B">Your text here</h4><p class="ps">Lorem ipsum dolor..</p></div>
+    <div id="img3"><h4 class="B">Your text here</h4><p class="ps">Lorem ipsum dolor..</p></div>
+    <div id="img4"><button id="btn2">Newest</button><h4 class="A">Your text here</h4>
+    <p class="pa">Lorem ipsum dolor..</p></div>
+    <div id="img5"><button id="btn3">Shop Now</button><div id="btn"><h1>Sale</h1></div><div id="main">
+        <h1>Your Title</h1>
+        <p id="m1">Lorem ipsum dolor sit amet consectetur, nisi quia amet cumque, consequuntur, praesentium nesciunt deleniti ipsam quidem vitae, voluptas nam!
+        </p>
+        <div class="tag"><del><p>$9,99</p></del><p id="dol">$4,99</p></div>
+        <div id="sid">
+            <h3>Size</h3>
+            <button class="btu">S</button>
+            <button class="btu">M</button>
+            <button class="btu">L</button>
+            <button class="btu">XL</button>
+        </div>
+    </div>
+</div>
+    <div id="side"><a href="#">Shop By</a>
+    <ul><li>Gender<i class='bx bx-chevron-down-circle'></i></li>
+    <li>Brands<i class='bx bx-chevron-down-circle'></i></li>
+    <li>Style<i class='bx bx-chevron-down-circle'></i></li>
+    <li>Price<i class='bx bx-chevron-down-circle'></i></li>
+    <li>Season<i class='bx bx-chevron-down-circle'></i></li>
+    <li>Sales<i class='bx bx-chevron-down-circle'></i></li></ul></div>
+    <div id="f"><h3>Filter <i class='bx bx-slider-alt bx-flip-vertical' ></i></h3></div>
+    
+</body>
+</html>
